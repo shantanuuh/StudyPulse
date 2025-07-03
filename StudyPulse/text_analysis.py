@@ -14,7 +14,9 @@ import time
 import logging
 from functools import lru_cache
 from student_responses_analysis import analyze_student_responses 
-
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('averaged_perceptron_tagger')
 # ✅ Configure Logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
